@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
+
+import DataViz from './DataViz';
 import './App.css';
+
+const data = [
+  { name: 'Savings & Investments', value: 500 },
+  { name: 'Recurring Expenses', value: 300 },
+  { name: 'Spending', value: 1200 },
+  { name: 'Remaining', value: 650 },
+];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <DataViz data={data} />
     </div>
   );
 }
